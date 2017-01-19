@@ -1,9 +1,9 @@
 # README
 
 ------------STATUS-----------
-codeclimate
+* codeclimate
 [![Code Climate](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
-travis ci
+* travis ci
 [![Build Status](https://travis-ci.org/nettojorge/estagiopro.svg?branch=master)](https://travis-ci.org/nettojorge/estagiopro)
 
 ------------/STATUS-----------
