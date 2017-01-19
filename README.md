@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* +[![Code Climate](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
+* [![Code Climate](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
+
+[![Build Status](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
