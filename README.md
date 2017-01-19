@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * [![Code Climate](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
 
-[![Build Status](https://codeclimate.com/github/nettojorge/estagiopro.png)](https://codeclimate.com/github/nettojorge/estagiopro)
+* [![Build Status](https://travis-ci.org/nettojorge/estagiopro/jobs/193234919.png)](https://travis-ci.org/nettojorge/estagiopro/jobs/193234919)
