@@ -11,23 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170209010055) do
+ActiveRecord::Schema.define(version: 20170302215952) do
+
+  create_table "areas", force: :cascade do |t|
+    t.integer  "id_area"
+    t.string   "nome_area"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "disciplinas", force: :cascade do |t|
+    t.integer  "id_disciplina"
+    t.string   "cod_disciplina"
+    t.string   "nome_disciplina"
+    t.integer  "tuma_disciplina"
+    t.string   "dias_disciplina"
+    t.time     "hora_disciplina"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "area_id"
+  end
 
   create_table "forms", force: :cascade do |t|
     t.string   "nome"
     t.string   "matricula"
-    t.string   "dis_01"
-    t.string   "dis_02"
-    t.string   "dis_03"
-    t.string   "dis_04"
-    t.string   "dis_05"
-    t.string   "dis_06"
-    t.string   "dis_07"
-    t.string   "dis_08"
-    t.string   "dis_09"
-    t.string   "dis_10"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "disciplina_01"
+    t.string   "disciplina_02"
+    t.string   "disciplina_03"
+    t.string   "disciplina_04"
+    t.string   "disciplina_05"
+    t.string   "disciplina_06"
+    t.string   "disciplina_07"
+    t.string   "disciplina_08"
+    t.string   "disciplina_09"
+    t.string   "disciplina_10"
+    t.boolean  "mestrado"
+    t.boolean  "doutorado"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "disciplina_id"
+    t.integer  "area_f_id"
   end
 
 end

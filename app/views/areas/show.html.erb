@@ -8,21 +8,27 @@
 <br/>
 <br/>
 </header>
-<
 
+<p id="notice"><%= notice %></p>
 
-<h1>Editar: cadastro discente</h1>
+<p>
+  <strong>Id area:</strong>
+  <%= @area.id_area %>
+</p>
 
-<%= render 'form' %>
+<p>
+  <strong>Nome area:</strong>
+  <%= @area.nome_area %>
+</p>
 
-<%= link_to 'Exibir', @form %> |
-<%= link_to 'Voltar', forms_path %>
+<%= link_to 'Editar', edit_area_path(@area) %> |
+<%= link_to 'Voltar', areas_path %>
 
 <footer>
 <br/>
 <br/>
 <br/>
-<p vspace="35px" hspace="15px">Rua Barão de Jeremoabo , s/n , Ondina , 40170-115 , Salvador <br/>
+<p>Rua Barão de Jeremoabo , s/n , Ondina , 40170-115 , Salvador <br/>
 Telefone Geral: 3283-6275 <br/>
 Telefone Direto: 3283-6299 / 3283-6258 <br/>
 Fax: 3283-6276/6275<br/>

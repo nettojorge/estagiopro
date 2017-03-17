@@ -1,0 +1,51 @@
+<header>
+<img  width="140px" height="110px" align="left" vspace="35px" hspace="15px"  src="https://www.ufba.br/sites/devportal.ufba.br/files/brasao_ufba.jpg"/>
+<br/>
+<br/>
+<h2>UNIVERDIDADE FEDERAL DA BAHIA</h2>
+<h3>INSTITUTO DE MATEMÁTICA</h3>
+<h3>DEPARTAMENTO DE CIÊNCCIAS DA COMPUTAÇÃO</h3>
+<br/>
+<br/>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Áreas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id area</th>
+      <th>Nome area</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @areas.each do |area| %>
+      <tr>
+        <td><%= area.id_area %></td>
+        <td><%= area.nome_area %></td>
+        <td><%= link_to 'Exibir', area %></td>
+        <td><%= link_to 'Editar', edit_area_path(area) %></td>
+        <td><%= link_to 'Deletar', area, method: :delete, data: { confirm: 'Você tem certeza que deseja deletar essa area?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Área', new_area_path %>
+
+<footer>
+<br/>
+<br/>
+<br/>
+<p>Rua Barão de Jeremoabo , s/n , Ondina , 40170-115 , Salvador <br/>
+Telefone Geral: 3283-6275 <br/>
+Telefone Direto: 3283-6299 / 3283-6258 <br/>
+Fax: 3283-6276/6275<br/>
+Email: mat@ufba.br<br/>
+</footer>

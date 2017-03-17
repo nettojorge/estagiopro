@@ -1,0 +1,61 @@
+<header>
+<img  width="140px" height="110px" align="left" vspace="35px" hspace="15px"  src="https://www.ufba.br/sites/devportal.ufba.br/files/brasao_ufba.jpg"/>
+<br/>
+<br/>
+<h2>UNIVERDIDADE FEDERAL DA BAHIA</h2>
+<h3>INSTITUTO DE MATEMÁTICA</h3>
+<h3>DEPARTAMENTO DE CIÊNCCIAS DA COMPUTAÇÃO</h3>
+<br/>
+<br/>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Disciplinas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id da disciplina</th>
+      <th>Código da disciplina</th>
+      <th>Nome da disciplina</th>
+      <th>Turma da disciplina</th>
+      <th>Dias da disciplina</th>
+      <th>Horário da disciplina</th>
+      <th>Área da disciplina</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @disciplinas.each do |disciplina| %>
+      <tr>
+        <td><%= disciplina.id_disciplina %></td>
+        <td><%= disciplina.cod_disciplina %></td>
+        <td><%= disciplina.nome_disciplina %></td>
+        <td><%= disciplina.tuma_disciplina %></td>
+        <td><%= disciplina.dias_disciplina %></td>
+        <td><%= disciplina.hora_disciplina %></td>
+        <td><%= disciplina.area_id %></td>
+        <td><%= link_to 'Exibir', disciplina %></td>
+        <td><%= link_to 'Editar', edit_disciplina_path(disciplina) %></td>
+        <td><%= link_to 'Deletar', disciplina, method: :delete, data: { confirm: 'Você tem certeza que deseja deletar essa disciplina?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Disciplina', new_disciplina_path %>
+
+<footer>
+<br/>
+<br/>
+<br/>
+<p>Rua Barão de Jeremoabo , s/n , Ondina , 40170-115 , Salvador <br/>
+Telefone Geral: 3283-6275 <br/>
+Telefone Direto: 3283-6299 / 3283-6258 <br/>
+Fax: 3283-6276/6275<br/>
+Email: mat@ufba.br<br/>
+</footer>

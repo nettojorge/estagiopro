@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_disciplina: 1
+  cod_disciplina: MyString
+  nome_disciplina: MyString
+  tuma_disciplina: 1
+  dias_disciplina: MyString
+  hora_disciplina: 2017-03-01 20:40:49
+
+two:
+  id_disciplina: 1
+  cod_disciplina: MyString
+  nome_disciplina: MyString
+  tuma_disciplina: 1
+  dias_disciplina: MyString
+  hora_disciplina: 2017-03-01 20:40:49

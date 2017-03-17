@@ -3,27 +3,31 @@
 one:
   nome: MyString
   matricula: MyString
-  dis_01: MyString
-  dis_02: MyString
-  dis_03: MyString
-  dis_04: MyString
-  dis_05: MyString
-  dis_06: MyString
-  dis_07: MyString
-  dis_08: MyString
-  dis_09: MyString
-  dis_10: MyString
+  disciplina_01: MyString
+  disciplina_02: MyString
+  disciplina_03: MyString
+  disciplina_04: MyString
+  disciplina_05: MyString
+  disciplina_06: MyString
+  disciplina_07: MyString
+  disciplina_08: MyString
+  disciplina_09: MyString
+  disciplina_10: MyString
+  mestrado: false
+  doutorado: false
 
 two:
   nome: MyString
   matricula: MyString
-  dis_01: MyString
-  dis_02: MyString
-  dis_03: MyString
-  dis_04: MyString
-  dis_05: MyString
-  dis_06: MyString
-  dis_07: MyString
-  dis_08: MyString
-  dis_09: MyString
-  dis_10: MyString
+  disciplina_01: MyString
+  disciplina_02: MyString
+  disciplina_03: MyString
+  disciplina_04: MyString
+  disciplina_05: MyString
+  disciplina_06: MyString
+  disciplina_07: MyString
+  disciplina_08: MyString
+  disciplina_09: MyString
+  disciplina_10: MyString
+  mestrado: false
+  doutorado: false

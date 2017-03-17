@@ -1,0 +1,2 @@
+json.extract! disciplina, :id, :id_disciplina, :cod_disciplina, :nome_disciplina, :tuma_disciplina, :dias_disciplina, :hora_disciplina, :created_at, :updated_at
+json.url disciplina_url(disciplina, format: :json)

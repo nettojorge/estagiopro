@@ -1,0 +1,45 @@
+<%= form_for(@disciplina) do |f| %>
+  <% if @disciplina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@disciplina.errors.count, "error") %> proibe essa disciplina de ser salva:</h2>
+
+      <ul>
+      <% @disciplina.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <p><b>Id</b></p>
+    <%= f.number_field :id_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Informe o código da disciplina:</b> <small>Ex: MATA37</small></p>
+    <%= f.text_field :cod_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Informe o nome da disciplina:</b></p>
+    <%= f.text_field :nome_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Informe a turma:</b></p>
+    <%= f.number_field :tuma_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Informe os dias da semana:</b> <small>Ex: seg-qua</small></p>
+    <%= f.text_field :dias_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Informe o horário:</b></p>
+    <%= f.time_select :hora_disciplina %>
+  </div>
+  <div class="field">
+    <p><b>Selecione a área:</b></p>
+    <%= collection_select(:area_id,0, Area.all, :id_area, :nome_area, {:prompt => "Selecione uma área"}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar" %>
+  </div>
+<% end %>

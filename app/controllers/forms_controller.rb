@@ -28,7 +28,7 @@ class FormsController < ApplicationController
 
     respond_to do |format|
       if @form.save
-        format.html { redirect_to @form, notice: 'Form was successfully created.' }
+        format.html { redirect_to @form, notice: 'Formulário criado com sucesso!' }
         format.json { render :show, status: :created, location: @form }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class FormsController < ApplicationController
   def update
     respond_to do |format|
       if @form.update(form_params)
-        format.html { redirect_to @form, notice: 'Form was successfully updated.' }
+        format.html { redirect_to @form, notice: 'Formulário atualizado com sucesso!' }
         format.json { render :show, status: :ok, location: @form }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class FormsController < ApplicationController
   def destroy
     @form.destroy
     respond_to do |format|
-      format.html { redirect_to forms_url, notice: 'Form was successfully destroyed.' }
+      format.html { redirect_to forms_url, notice: 'Formulário excluido com sucesso!' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class FormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def form_params
-      params.require(:form).permit(:nome, :matricula, :dis_01, :dis_02, :dis_03, :dis_04, :dis_05, :dis_06, :dis_07, :dis_08, :dis_09, :dis_10)
+      params.require(:form).permit(:nome, :matricula, :disciplina_01, :disciplina_02, :disciplina_03, :disciplina_04, :disciplina_05, :disciplina_06, :disciplina_07, :disciplina_08, :disciplina_09, :disciplina_10, :mestrado, :doutorado)
     end
 end

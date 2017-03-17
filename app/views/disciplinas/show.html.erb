@@ -1,0 +1,60 @@
+<header>
+<img  width="140px" height="110px" align="left" vspace="35px" hspace="15px"  src="https://www.ufba.br/sites/devportal.ufba.br/files/brasao_ufba.jpg"/>
+<br/>
+<br/>
+<h2>UNIVERDIDADE FEDERAL DA BAHIA</h2>
+<h3>INSTITUTO DE MATEMÁTICA</h3>
+<h3>DEPARTAMENTO DE CIÊNCCIAS DA COMPUTAÇÃO</h3>
+<br/>
+<br/>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @disciplina.id_disciplina %>
+</p>
+
+<p>
+  <strong>Código:</strong>
+  <%= @disciplina.cod_disciplina %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @disciplina.nome_disciplina %>
+</p>
+
+<p>
+  <strong>Turma:</strong>
+  <%= @disciplina.tuma_disciplina %>
+</p>
+
+<p>
+  <strong>Dias da semana:</strong>
+  <%= @disciplina.dias_disciplina %>
+</p>
+
+<p>
+  <strong>Horário:</strong>
+  <%= @disciplina.hora_disciplina %>
+</p>
+
+<p>
+  <strong>Área:</strong>
+  <%= @disciplina.area_id %>
+</p>
+<%= link_to 'Editar', edit_disciplina_path(@disciplina) %> |
+<%= link_to 'Voltar', disciplinas_path %>
+
+<footer>
+<br/>
+<br/>
+<br/>
+<p>Rua Barão de Jeremoabo , s/n , Ondina , 40170-115 , Salvador <br/>
+Telefone Geral: 3283-6275 <br/>
+Telefone Direto: 3283-6299 / 3283-6258 <br/>
+Fax: 3283-6276/6275<br/>
+Email: mat@ufba.br<br/>
+</footer>
